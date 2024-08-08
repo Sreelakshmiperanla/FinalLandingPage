@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #ffffff;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #ca97d1;
+    /* background-color: #893494; */
+    padding: 0.5rem; /* Reduced padding */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px; /* Reduced logo size */
+    height: 40px; /* Reduced logo size */
+    border-radius: 50%;
+    margin-right: 8px; /* Reduced margin */
+}
+
+.brand-name {
+    font-size: 18px; /* Reduced font size */
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-container a{
+    color: white;
+    text-decoration: none;
+}
+.logo-container a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden h1 {
+    font-size: 70px;
+    background: linear-gradient(to right, rgb(206, 165, 205), #893494);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden h3 {
+    font-size: 30px;
+    /* background: linear-gradient(to right, rgb(228, 199, 140), #3ec3d4); */
+    background: linear-gradient(to right, rgb(206, 165, 205), #893494);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(190, 129, 211); /* Match underline color with gradient */
+}
+
+.hidden p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hidden img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+.hidden img {
+    max-width: 400px; /* Adjusted for consistency with other images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.future-text p {
+    text-align: center;
+    margin-top: 60px; /* Space between image and text */
+    font-size: 36px; /* Increased size for more prominence */
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(206, 165, 205), #893494); /* Gradient color */
+    -webkit-background-clip: text; /* Clipping for gradient text */
+    background-clip: text;
+    color: transparent; /* Makes the text color transparent so the gradient is visible */
+}
+
+
+.section-image-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-image-right .text-content {
+    max-width: 50%;
+    text-align: center;
+}
+
+.section-image-right .image-container {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-image-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #e6d3e8; /* Plum color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Changed to relative to ensure the footer expands with content */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #76248a; /* Slightly lighter purple for button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: #893494;
+    border: 2px solid #893494;
+}
+

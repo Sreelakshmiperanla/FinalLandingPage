@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Starups Logo" class="logo">
+            <a href="index.html"><span class="brand-name">StarUPS</span></a>
+        </div>
+    </nav>
+
+    <section class="hidden section-image-right">
+        <div class="text-content">
+            <h1>We Are Change</h1>
+            <p>We're on a mission to transform the way learning is approached by modernizing and improving its effectiveness.</p>
+        </div>
+        <div class="image-container">
+            <img src="change.jpg" alt="Change Image" width="550" height="550">
+        </div>
+    </section>
+    <!-- <section class="hidden">
+        <h3>Welcome to StarUPS</h3>
+        <p>Unlock the power of visualization to enhance your learning experience. At STARUPS, we offer both live and recorded classes that bring programming and computer science concepts to life. Our unique visualization-based approach helps you understand complex topics from the basics to advanced levels. Whether you prefer real-time interaction with instructors or the flexibility of recorded sessions, we have you covered. We provide you with the most relevant textbooks, documentation, handwritten notes, and sites to help you dive into deeper topics.</p>
+    </section> -->
+
+    <section class="hidden">
+        <h3>Who are we</h3>
+        <p>STARUPS is a pioneering platform dedicated to modernizing learning through visualization-based programming and conceptual classes. We provide live and recorded sessions to enhance understanding of complex topics from basic to advanced levels.</p>
+        <div class="image-container">
+            <img src="whoarewe.jpg" alt="Who are we">
+        </div>
+    </section>
+    <section class="hidden">
+        <h3>What do we do</h3>
+        <p>We offer well-structured roadmaps, in-demand tool training, and comprehensive research support to guide your learning journey. Our programs include internships, daily event notifications, and curated resources for continuous growth.</p>
+        <div class="image-container">
+            <img src="e-learning.jpg" alt="What do we do" width="400">
+        </div>
+    </section>
+    <section class="hidden">
+        <h3>Why choose us</h3>
+        <p>Choose STARUPS for our innovative approach that combines cutting-edge tools and real-world experience with a supportive community. Benefit from our unique educational resources and mentorship to stay ahead in your field.</p>
+        <div class="image-container">
+            <img src="career.jpg" alt="Why choose us">
+        </div>
+        <div class="future-text">
+            <p>Build your future with us</p>
+        </div>
+    </section>
+    <footer>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+        <br>
+        <br>
+        <br>
+        <p>&copy; 2024 StarUPS. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
